@@ -37,7 +37,7 @@ import { RouterModule } from '@angular/router';
             <h4 class="font-semibold text-foreground mb-4">Contact</h4>
             <p class="text-muted-foreground text-sm mb-2">📍 Anna Nagar, Chennai</p>
             <p class="text-muted-foreground text-sm mb-2">📞 +91 (123) 456-7890</p>
-            <p class="text-muted-foreground text-sm">✉️ info@elevenstudio.com</p>
+            <p class="text-muted-foreground text-sm">✉️ info&#64;elevenstudio.com</p>
           </div>
 
           <!-- Social Links -->

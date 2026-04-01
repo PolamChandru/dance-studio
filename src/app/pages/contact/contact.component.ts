@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { SectionHeadingComponent } from '../../components/section-heading/section-heading.component';
 
 interface FormData {
   name: string;
@@ -14,16 +13,16 @@ interface FormData {
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule, SectionHeadingComponent],
+  imports: [CommonModule, FormsModule],
   template: `
     <div class="min-h-screen bg-background pt-24">
       <section class="py-16">
         <div class="container mx-auto px-6">
-          <app-section-heading 
-            subtitle="Get In Touch" 
-            title="Start Dancing Today"
-            description="Fill out the form below or reach us directly. We&apos;d love to welcome you to Élève.">
-          </app-section-heading>
+          <div class="text-center mb-12">
+            <span class="text-sm font-semibold text-primary">Get In Touch</span>
+            <h2 class="text-4xl font-bold text-foreground mt-2">Start Dancing Today</h2>
+            <p class="text-muted-foreground mt-4 max-w-2xl mx-auto">Fill out the form below or reach us directly. We&apos;d love to welcome you to Élève.</p>
+          </div>
 
           <div class="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <!-- Form -->
@@ -124,8 +123,8 @@ interface FormData {
                 </div>
                 <div>
                   <h3 class="text-foreground font-semibold text-sm mb-1">Email Us</h3>
-                  <p class="text-muted-foreground text-sm">hello@elevedance.com</p>
-                  <p class="text-muted-foreground text-sm">admissions@elevedance.com</p>
+                  <p class="text-muted-foreground text-sm">hello&#64;elevedance.com</p>
+                  <p class="text-muted-foreground text-sm">admissions&#64;elevedance.com</p>
                 </div>
               </div>
 
